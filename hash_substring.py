@@ -28,7 +28,7 @@ def get_occurrences(pat, lon):
 
 
     for i in range(patlen):
-        hashed += ord(pat[i])
+        hashp += ord(pat[i])
     for i in range(tlen-patlen+1):
         hasht = 0
         for k in range(patlen):

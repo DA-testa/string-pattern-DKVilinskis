@@ -34,7 +34,7 @@ def get_occurrences(pat, lon):
         for k in range(patlen):
             hasht += ord(lon[i+k])
         if hashp == hasht:
-            if pat == lon[i:patlen]:
+            if pat == lon[i:patlen+i]:
                 res.append(i)
     return res
 
